@@ -37,7 +37,17 @@ app.get('/add/countries', (req, res) => {
     res.status(401)
       .send('You are not Woojun !');
   }
+})
 
+app.get('/countries', (req, res) => {
+  CountryList.find()
+    .exec((err, docs) => {
+      if (err) {
+        console.log(err)
+      } else {
+        res.json(docs);
+      }
+    })
 })
 
 // holidayCrawler('south-korea', 2020)
