@@ -1,0 +1,23 @@
+{
+  "name": "holweekcal-proxy-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "crawler": "nodemon ./src/crawler.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WooJunKang/holweekcal-proxy-server.git"
+  },
+  "author": "woojun kang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WooJunKang/holweekcal-proxy-server/issues"
+  },
+  "homepage": "https://github.com/WooJunKang/holweekcal-proxy-server#readme",
+  "dependencies": {
+    "puppeteer": "^5.3.1"
+  }
+}
