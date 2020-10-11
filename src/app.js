@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const fetch = require('node-fetch');
 const CountryList = require('../models/countryListSchema');
 const HolidayInfo = require('../models/holidayInfoSchema');
 const CONFIG = require('../config/config.json');
@@ -22,7 +23,7 @@ mongoose.connect(CONFIG.MONGO_DB_CODE, { useNewUrlParser: true, useUnifiedTopolo
 /* input data into DB*/
 
 /* store country list data to DB */
-app.get('/add/countries', (req, res) => {
+app.post('/add/countries', (req, res) => {
   if (CONFIG.AUTH_USER.includes(req.headers.authorization)) {
     countryCrawler()
       .then(countries => {
@@ -50,6 +51,46 @@ app.get('/countries', (req, res) => {
     })
 })
 
-// holidayCrawler('south-korea', 2020)
-//   .then(res => console.log(res))
-//   .catch(err => console.log(err));
+app.post('/add/holidays/year/:year/country/:country', (req, res) => {
+  if (CONFIG.AUTH_USERS.includes(req.headers.authorization)) {
+
+    const { year } = req.params;
+    const { country } = req.params;
+
+    holidayCrawler(country, year)
+      .then(holidays => {
+        const currentDate = getCurDate();
+        const newHolidayInfo = new HolidayInfo({
+          country_code: country,
+          year: year,
+          updated_at: currentDate,
+          data: holidays
+        })
+
+        newHolidayInfo.save()
+          .then((result) => {
+            res.send(result)
+          })
+          .catch((err) => {
+            console.log(err);
+          })
+      })
+
+  } else {
+    res.status(401)
+      .send('You are not Woojun !');
+  }
+})
+
+app.get('/holidays/year/:year/country/:country', (req, res) => {
+  const { year } = req.params;
+  const { country } = req.params;
+  HolidayInfo.findOne({ country_code: country, year: year })
+    .exec((err, docs) => {
+      if (err) {
+        console.log(err)
+      } else {
+        res.json(docs);
+      }
+    })
+})

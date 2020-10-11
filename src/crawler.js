@@ -19,7 +19,6 @@ const holidayCrawler = async (countryCode, year) => {
   const holidayList = await page.evaluate(() => {
 
     const _array = [];
-    const YEAR = document.querySelector('#year').value;
     const holidayAllEle = document.querySelector('tbody').querySelectorAll("[id*='tr']")
 
 
@@ -27,7 +26,6 @@ const holidayCrawler = async (countryCode, year) => {
       let obj = {};
       obj.name = ele.querySelector('a').textContent
       obj.type = ele.querySelectorAll('td')[2].textContent
-      obj.year = YEAR
       obj.day_date = ele.querySelector('th').textContent
       obj.day_of_week = ele.querySelector('td.nw').textContent
       _array.push(obj);
@@ -36,7 +34,6 @@ const holidayCrawler = async (countryCode, year) => {
     return _array;
 
   })
-  console.log(holidayList);
   browser.close();
 
   return holidayList;

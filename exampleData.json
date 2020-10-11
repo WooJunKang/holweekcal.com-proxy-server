@@ -1,0 +1,195 @@
+{
+  "data": [
+    {
+      "name": "New Year's Day",
+      "type": "Public Holiday",
+      "day_date": "1 Jan",
+      "day_of_week": "Wednesday"
+    },
+    {
+      "name": "Seollal Holiday",
+      "type": "Public Holiday",
+      "day_date": "24 Jan",
+      "day_of_week": "Friday"
+    },
+    {
+      "name": "Seollal",
+      "type": "Public Holiday",
+      "day_date": "25 Jan",
+      "day_of_week": "Saturday"
+    },
+    {
+      "name": "Seollal Holiday",
+      "type": "Public Holiday",
+      "day_date": "27 Jan",
+      "day_of_week": "Monday"
+    },
+    {
+      "name": "Valentine's Day",
+      "type": "Observance",
+      "day_date": "14 Feb",
+      "day_of_week": "Friday"
+    },
+    {
+      "name": "Independence Movement Day",
+      "type": "National holiday",
+      "day_date": "1 Mar",
+      "day_of_week": "Sunday"
+    },
+    {
+      "name": "March Equinox",
+      "type": "Season",
+      "day_date": "20 Mar",
+      "day_of_week": "Friday"
+    },
+    {
+      "name": "Arbor Day",
+      "type": "Observance",
+      "day_date": "5 Apr",
+      "day_of_week": "Sunday"
+    },
+    {
+      "name": "National Assembly Election Day",
+      "type": "Public Holiday",
+      "day_date": "15 Apr",
+      "day_of_week": "Wednesday"
+    },
+    {
+      "name": "Buddha's Birthday",
+      "type": "Public Holiday",
+      "day_date": "30 Apr",
+      "day_of_week": "Thursday"
+    },
+    {
+      "name": "Labor Day",
+      "type": "Bank Holiday",
+      "day_date": "1 May",
+      "day_of_week": "Friday"
+    },
+    {
+      "name": "Children's Day",
+      "type": "Public Holiday",
+      "day_date": "5 May",
+      "day_of_week": "Tuesday"
+    },
+    {
+      "name": "Parents' Day",
+      "type": "Observance",
+      "day_date": "8 May",
+      "day_of_week": "Friday"
+    },
+    {
+      "name": "Teacher's Day",
+      "type": "Observance",
+      "day_date": "15 May",
+      "day_of_week": "Friday"
+    },
+    {
+      "name": "Memorial Day",
+      "type": "Public Holiday",
+      "day_date": "6 Jun",
+      "day_of_week": "Saturday"
+    },
+    {
+      "name": "June Solstice",
+      "type": "Season",
+      "day_date": "21 Jun",
+      "day_of_week": "Sunday"
+    },
+    {
+      "name": "Constitution Day",
+      "type": "Observance",
+      "day_date": "17 Jul",
+      "day_of_week": "Friday"
+    },
+    {
+      "name": "Liberation Day",
+      "type": "National holiday",
+      "day_date": "15 Aug",
+      "day_of_week": "Saturday"
+    },
+    {
+      "name": "Temporary Holiday",
+      "type": "Public Holiday",
+      "day_date": "17 Aug",
+      "day_of_week": "Monday"
+    },
+    {
+      "name": "September Equinox",
+      "type": "Season",
+      "day_date": "22 Sep",
+      "day_of_week": "Tuesday"
+    },
+    {
+      "name": "Chuseok Holiday",
+      "type": "Public Holiday",
+      "day_date": "30 Sep",
+      "day_of_week": "Wednesday"
+    },
+    {
+      "name": "Chuseok",
+      "type": "Public Holiday",
+      "day_date": "1 Oct",
+      "day_of_week": "Thursday"
+    },
+    {
+      "name": "Armed Forces Day",
+      "type": "Observance",
+      "day_date": "1 Oct",
+      "day_of_week": "Thursday"
+    },
+    {
+      "name": "Chuseok Holiday",
+      "type": "Public Holiday",
+      "day_date": "2 Oct",
+      "day_of_week": "Friday"
+    },
+    {
+      "name": "National Foundation Day",
+      "type": "National holiday",
+      "day_date": "3 Oct",
+      "day_of_week": "Saturday"
+    },
+    {
+      "name": "Hangeul Proclamation Day",
+      "type": "National holiday",
+      "day_date": "9 Oct",
+      "day_of_week": "Friday"
+    },
+    {
+      "name": "Halloween",
+      "type": "Observance",
+      "day_date": "31 Oct",
+      "day_of_week": "Saturday"
+    },
+    {
+      "name": "December Solstice",
+      "type": "Season",
+      "day_date": "21 Dec",
+      "day_of_week": "Monday"
+    },
+    {
+      "name": "Christmas Eve",
+      "type": "Observance",
+      "day_date": "24 Dec",
+      "day_of_week": "Thursday"
+    },
+    {
+      "name": "Christmas Day",
+      "type": "Public Holiday",
+      "day_date": "25 Dec",
+      "day_of_week": "Friday"
+    },
+    {
+      "name": "New Year's Eve",
+      "type": "Observance",
+      "day_date": "31 Dec",
+      "day_of_week": "Thursday"
+    }
+  ],
+  "_id": "5f82fe3069724f0974958430",
+  "country_code": "south-korea",
+  "year": 2020,
+  "updated_at": "2020-10-11",
+  "__v": 0
+}

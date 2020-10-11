@@ -3,13 +3,10 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 var holidayInfoSchema = new Schema({
-  name: String,
-  type: String,
+  country_code: String,
   year: Number,
-  day_date: String,
-  day_of_week: String,
-  updated_at: String
-
+  updated_at: String,
+  data: Array
 });
 
 module.exports = mongoose.model('HolidayInfo', holidayInfoSchema);
